@@ -17,6 +17,8 @@
     <Stage>normal</Stage>
     <MinCodeCoverage>100</MinCodeCoverage>
     <MinMutationScore>96</MinMutationScore>
+    <AssemblyName>Suzuryg.FaceEmo.Ext.TimeProvider.Testing</AssemblyName>
+    <PackageId>Microsoft.Extensions.TimeProvider.Testing</PackageId>
   </PropertyGroup>
 
   <ItemGroup>
