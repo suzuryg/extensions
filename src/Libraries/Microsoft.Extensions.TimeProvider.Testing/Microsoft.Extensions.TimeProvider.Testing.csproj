@@ -19,11 +19,13 @@
     <MinMutationScore>96</MinMutationScore>
     <AssemblyName>Suzuryg.FaceEmo.Ext.TimeProvider.Testing</AssemblyName>
     <PackageId>Microsoft.Extensions.TimeProvider.Testing</PackageId>
-    <TargetFrameworks>$(NetCoreTargetFrameworks)$(ConditionalNet462);netstandard2.1;</TargetFrameworks>
+    <TargetFrameworks>$(NetCoreTargetFrameworks);netstandard2.1;</TargetFrameworks>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.Bcl.TimeProvider" Condition="!$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'net8.0'))" />
+    <Reference Include="Suzuryg.FaceEmo.Ext.TimeProvider" Condition="!$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'net8.0'))" >
+      <HintPath>Microsoft.Bcl.TimeProvider\netstandard2.1\Suzuryg.FaceEmo.Ext.TimeProvider.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
   <ItemGroup>
