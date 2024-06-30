@@ -19,6 +19,7 @@
     <MinMutationScore>96</MinMutationScore>
     <AssemblyName>Suzuryg.FaceEmo.Ext.TimeProvider.Testing</AssemblyName>
     <PackageId>Microsoft.Extensions.TimeProvider.Testing</PackageId>
+    <TargetFrameworks>$(NetCoreTargetFrameworks)$(ConditionalNet462);netstandard2.1;</TargetFrameworks>
   </PropertyGroup>
 
   <ItemGroup>
